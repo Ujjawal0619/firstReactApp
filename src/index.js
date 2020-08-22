@@ -14,14 +14,14 @@ ReactDOM.render(
   <>
     {/* below is a custom element called component with custom attributs call props, syntax are same as HTML */}
     <Card
+      sname="EXTRACTION"
+      imgsrc="https://wallpapercave.com/wp/wp6157194.jpg"
+      link="https://www.netflix.com/in/title/80230399"
+    />
+    <Card
       imgsrc="https://wallpapercave.com/wp/wp7188881.jpg"
       sname="PROJECT POWER"
       link="https://www.netflix.com/in/title/80204465"
-    />
-    <Card
-      sname="EXTRACTION"
-      imgsrc="https://wallpapercave.com/wp/wp6157194.jpg"
-      links="https://www.netflix.com/in/title/80230399"
     />
   </>, //multiple element so here is the need of react fragment syntactic sugar.
   document.getElementById("root") // where to show?
