@@ -1,17 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  <>
+    <div className="cards">
+      {/* card 1 */}
+      <div classNam="card">
+        <img
+          src="https://wallpapercave.com/wp/wp7188881.jpg"
+          alt="myPic"
+          className="card__img"
+        />
+        <div className="card__info">
+          <span className="card__category">A Netflix Original</span>
+          <h3 className="card__title">PROJECT POWER</h3>
+          <a href="https://www.netflix.com/in/title/80204465" target="black">
+            <button> Watch Now </button>
+          </a>
+        </div>
+      </div>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+      {/* card 2 */}
+      <div classNam="card">
+        <img
+          src="https://wallpapercave.com/wp/wp3814512.png"
+          alt="myPic"
+          className="card__img"
+        />
+        <div className="card__info">
+          <span className="card__category">A Netflix Original</span>
+          <h3 className="card__title">SECRED GAMES</h3>
+          <a href="https://www.netflix.com/in/title/80115328" target="black">
+            <button> Watch Now </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </>,
+  document.getElementById("root")
+);
