@@ -13,7 +13,7 @@ const Sdata = [
   },
   {
     sname: "SACRED GAMES",
-    imgsrc: "https://wallpapercave.com/wp/wp3814512.png",
+    imgsrc: "https://wallpapercave.com/wp/wp3814513.jpg",
     title: "Netflix Original Series",
     link: "https://www.netflix.com/in/title/80115328",
   },
