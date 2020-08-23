@@ -8,21 +8,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Card from "./Cards";
+import Sdata from "./Sdata"; // array of data object.
 
 // what to show?, where to show?, callback func.
 ReactDOM.render(
   <>
-    {/* below is a custom element called component with custom attributs call props, syntax are same as HTML */}
-    <Card
-      sname="EXTRACTION"
-      imgsrc="https://wallpapercave.com/wp/wp6157194.jpg"
-      link="https://www.netflix.com/in/title/80230399"
-    />
-    <Card
-      imgsrc="https://wallpapercave.com/wp/wp7188881.jpg"
-      sname="PROJECT POWER"
-      link="https://www.netflix.com/in/title/80204465"
-    />
+    <h1 className="heading">My Top Favorite Netflix Web Series</h1>
+    <div className="container">
+      {/* below is a custom element called component with custom attributs call props, syntax are same as HTML */}
+      <Card
+        sname={Sdata[4].sname}
+        imgsrc={Sdata[4].imgsrc}
+        link={Sdata[4].link}
+      />
+      <Card
+        sname={Sdata[7].sname}
+        imgsrc={Sdata[7].imgsrc}
+        link={Sdata[7].link}
+      />
+    </div>
   </>, //multiple element so here is the need of react fragment syntactic sugar.
   document.getElementById("root") // where to show?
 );
